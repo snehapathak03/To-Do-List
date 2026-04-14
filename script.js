@@ -14,8 +14,9 @@ const addTodo =()=>{
 
     if(addButton.value ==="Edit"){
         //passing the original text to editLocalTodo function before edit it in todoList
-        editLocalTodo(editTodo.target.previousElementSibling.innerHTML);
-        editTodo.target.previousElementSibling.innerHTML = inputText;
+        const taskText = editTodo.target.parentElement.querySelector("p");
+        editLocalTodo(taskText.innerHTML);
+        taskText.innerHTML = inputText;
         addButton.value = "Add";
         inputBox.value ="";
     }
@@ -54,7 +55,7 @@ const updateTodo= (e) => {
     }
 
     if(e.target.innerHTML === "Edit"){
-        inputBox.value = e.target.previousElementSibling.innerHTML;
+        inputBox.value = e.target.parentElement.querySelector("p").innerHTML;
         inputBox.focus();
         addButton.value= "Edit";
         editTodo = e;
