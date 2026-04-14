@@ -17,7 +17,6 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-
 }
 
 .input-container{
@@ -39,11 +38,8 @@ body{
 
 .input-container input[type="text"]{
     width: 70%;
-    color: black;
-    font-weight: 700;
-}
-.input-container input[type="text"]:hover{
-    background-color: rgb(223, 240, 240);
+    /* color: black;
+    font-weight: 700; */
 }
 
 .input-container input[type="button"]{
@@ -58,14 +54,18 @@ body{
     background-color: rgb(216, 248, 152);
 }
 
+/* .input-container input[type="text"]:hover{
+    background-color: rgb(223, 240, 240);
+} */
+
 ul{
     width: 100%;
     max-width: 400px;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    flex-direction: column;
-    
+    flex-direction: column; */
 }
+
 ul li{
     cursor: pointer;
     list-style-type: none;
@@ -73,14 +73,14 @@ ul li{
     border: 1px solid black;
     border-radius: 8px;
     padding: 6px 12px;
-    /* background-color: #ffffff; */
+    background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #d9fafa;
     transition: background-color 0.5s;
-    
 }
+
 ul li:hover{
     background-color: #c0f9f9;
 }
@@ -109,5 +109,4 @@ ul li p{
 
 .editButton{
     color: #42bb30;
-
 }
